@@ -760,11 +760,11 @@ class VirtualObject:
         DLL.ZkVirtualObject_setPresetName(self._handle, value.encode("windows-1252"))
 
     @property
-    def name(self) -> str:
+    def vob_name(self) -> str:
         return DLL.ZkVirtualObject_getName(self._handle).value
 
-    @name.setter
-    def name(self, value: str) -> None:
+    @vob_name.setter
+    def vob_name(self, value: str) -> None:
         DLL.ZkVirtualObject_setName(self._handle, value.encode("windows-1252"))
 
     @property
