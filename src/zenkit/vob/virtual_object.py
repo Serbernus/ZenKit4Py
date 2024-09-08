@@ -645,7 +645,7 @@ class VirtualObject:
 
     @position.setter
     def position(self, value: Vec3f) -> None:
-        DLL.ZkVirtualObject_setPosition(self._handle, Vec3f(value))
+        DLL.ZkVirtualObject_setPosition(self._handle, value)
 
     @property
     def rotation(self) -> Mat3x3:
