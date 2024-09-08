@@ -842,7 +842,7 @@ class VirtualObject:
         self._keepalive = None
 
     def __repr__(self) -> str:
-        return f"<{self.__class__.__name__} handle={self._handle} name={self.name!r} type={self.type.name}>"
+        return f"<{self.__class__.__name__} handle={self._handle} name={self.vob_name!r} type={self.type.name}>"
 
     def __iter__(self) -> Iterator["VirtualObject"]:
         return iter(self.children)
