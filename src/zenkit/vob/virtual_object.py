@@ -637,7 +637,7 @@ class VirtualObject:
 
     @bbox.setter
     def bbox(self, value: AxisAlignedBoundingBox) -> None:
-        DLL.ZkVirtualObject_setBbox(self._handle, AxisAlignedBoundingBox(value))
+        DLL.ZkVirtualObject_setBbox(self._handle, value)
 
     @property
     def position(self) -> Vec3f:
